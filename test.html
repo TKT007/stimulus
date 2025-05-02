@@ -14,40 +14,7 @@
         }
       }</style><title>subsidyforall</title><link rel="icon" href="images/fav.ico" type="image/x-icon">
   
-  <script>
-  function setCookie(name, value, path = '/') {
-    var date = new Date();
-    var expires = '';
-
-    if (name !== 'llRequestData') {
-      date.setTime(date.getTime() + 2592000000);
-      expires = "; expires=" + date.toUTCString();
-    }
-
-    document.cookie = name + "=" + value + expires + "; path=" + path;
-  }
-
-  function getCookie(name) {
-    const cookieValue = document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)')?.pop() || '';
-    try {
-      return JSON.parse(cookieValue);
-    } catch (error) {
-      return cookieValue;
-    }
-  }
-
-
-  setCookie('llRequestData', JSON.stringify({"countrycode":"NL","country":"Netherlands","city":"Amsterdam","region":"North Holland","postalcode":"1012","ip":"2a00:b703:fff1:102::1","currentdate":"May 2, 2025","date":"02/05/2025","day":"2","month":"5","year":"2025","dayname":"Friday","monthname":"May","browser":"Safari","operatingSystem":"Mac OS","device":"Desktop"}));
-  const variantId = '69ed4d71a5dbbef1843fa5b1693050d1'
-  const randomVariant = 'true'
-
-  if(variantId !=='undefined' && randomVariant !== 'undefined'){
-    if (!getCookie('landerlab-abtest-variantId') || true) {
-      console.log('Setting AB Test cookie');
-      setCookie('landerlab-abtest-variantId', '69ed4d71a5dbbef1843fa5b1693050d1');
-    }
-  }
-  </script>
+  
 </head>
   <body class="">
     
